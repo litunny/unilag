@@ -1,0 +1,30 @@
+<ion-menu [content]="mycontent">
+   <ion-content class="menu-bg">
+    <button style="background-color: transparent;  color: #434049; box-shadow: none;" ion-button icon-only>
+        <ion-icon color="light" name="settings"></ion-icon>
+    </button>
+   
+    <img style="width: 30%; position: absolute; border-radius: 300px; margin-top:50px; margin-left: 42px;" src="assets/images/passport.jpg">
+    <h4 style="margin-top: 100px; margin-left: 60px; color: #fff;">Jessica Dawyne</h4><br>
+    <ion-list>
+        <button ion-item="" menuClose (click) = "Feeds()" style="background-color: #2C2C3B; color: #fff;">
+            <ion-icon color="light" name="logo-rss" item-left></ion-icon>
+              Profile
+        </button>
+         <button ion-item="" menuClose (click) = "Feeds()" style="background-color: #2C2C3B; color: #fff;">
+            <ion-icon color="light" name="logo-rss" item-left></ion-icon>
+              Results
+        </button>
+          <button ion-item="" menuClose (click) = "PlayList()" style="background-color: #2C2C3B; color: #fff;">
+            <ion-icon color="light" name="heart" item-left></ion-icon>
+              Courses
+          </button>
+          <button ion-item="" menuClose style="background-color: #2C2C3B; color: #fff;">
+            <ion-icon color="light" name="chatbubbles" item-left></ion-icon>
+              Timestable
+          </button>
+    </ion-list>
+</ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
