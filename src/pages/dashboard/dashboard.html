@@ -23,7 +23,7 @@
                     <ion-row class="row" style="margin-top: 6px;">
                         <ion-col class="col" col-3=""></ion-col>
                         <ion-col class="col" col-3="">
-                            <button color="light" ion-button style="height: 27px;border-radius: 15px;text-transform:initial;color: #e91e63;font-size: 12px;">
+                            <button (click)="Update()" color="light" ion-button style="height: 27px;border-radius: 15px;text-transform:initial;color: #e91e63;font-size: 12px;">
                                 <span class="button-inner">Update</span>
                             </button>
                         </ion-col>
@@ -37,25 +37,25 @@
             </ion-col>
             </ion-row>
             <ion-row class="row">
-                <ion-col col-6 ion-button style="height: 145px;background-color:#f55e8d;border-radius:0px !important; padding-top: 7px; padding-left: 10px;">
+                <ion-col col-6 ion-button (click)="Academic()" style="height: 145px;background-color:#f55e8d;border-radius:0px !important; padding-top: 7px; padding-left: 10px;">
                     <ion-icon name="school" style="font-size: 60px; color: white;"></ion-icon>
                    <div style="position: absolute;margin-top: 40px;">
                         <p style="font-family: Tahoma; text-transform: none;">Academics</p>
                    </div>
                 </ion-col>
-                <ion-col col-6 ion-button style="height: 145px;background-color:#9b41e0;border-radius:0px !important;; padding-top: 7px; padding-left: 10px;">
+                <ion-col col-6 ion-button (click)="Payment()" style="height: 145px;background-color:#9b41e0;border-radius:0px !important;; padding-top: 7px; padding-left: 10px;">
                    <ion-icon name="card" style="font-size: 60px; color: white;"></ion-icon> 
                    <div style="position: absolute;margin-top: 40px;">
                         <p style="font-family: Tahoma; text-transform: none;">Payment</p>
                    </div> 
                 </ion-col>
-                <ion-col  col-6 ion-button  style="height: 145px;background-color:#fec007;border-radius:0px !important;; padding-top: 7px; padding-left: 10px;">
+                <ion-col  col-6 ion-button (click)="Vas()" style="height: 145px;background-color:#fec007;border-radius:0px !important;; padding-top: 7px; padding-left: 10px;">
                     <ion-icon name="list-box" style="font-size: 60px; color: white;"></ion-icon>
                     <div style="position: absolute;margin-top: 40px;">
                         <p style="font-family: Tahoma; text-transform: none;">VAS</p>
                    </div>
                 </ion-col>
-                <ion-col class="col button button-md button-default button-default-md" col-6 ion-button style="height: 145px;background-color:#0f78c1;border-radius:0px !important;; padding-top: 7px; padding-left: 10px;">
+                <ion-col col-6 ion-button (click)="News()" style="height: 145px;background-color:#0f78c1;border-radius:0px !important;; padding-top: 7px; padding-left: 10px;">
                     <ion-icon name="mail" style="font-size: 60px; color: white;"></ion-icon>
                     <div style="position: absolute;margin-top: 40px;">
                         <p style="font-family: Tahoma; text-transform: none;">News</p>

@@ -9,6 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DashboardPage } from "../pages/dashboard/dashboard";
 import { SideMenu } from "../pages/side-menu/side-menu";
+import { Academic } from "../pages/academic/academic";
+import { Payment } from "../pages/payment/payment";
+import { Vas } from "../pages/vas/vas";
+import { News } from "../pages/news/news";
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +26,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     DashboardPage,
-    SideMenu
+    SideMenu,
+    Academic,
+    Payment,
+    Vas,
+    News
   ],
   imports: [
     BrowserModule,
@@ -35,7 +44,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     DashboardPage,
-    SideMenu
+    SideMenu,
+    Academic,
+    Payment,
+    Vas,
+    News
   ],
   providers: [
     StatusBar,
